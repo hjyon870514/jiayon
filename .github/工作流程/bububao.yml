@@ -1,0 +1,37 @@
+＃此工作流程将全新安装节点依赖项，构建源代码并在不同版本的节点上运行测试
+＃有关更多信息，请参见：https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+姓名：bububao @ ziye3
+
+于：
+    workflow_dispatch：
+    时间表：
+      - cron的：“ 0,30 0-16,21,22,23 * * * ”
+    观看：
+      类型：[开始]
+    repository_dispatch：
+      类型：bububao
+
+职位：
+  建立：
+    运行：ubuntu-latest
+    如果：github.event.repository.owner.id == github.event.sender.id
+    步骤：
+      -名称：结帐
+        用途：actions / checkout @ v2
+      -名称：使用Node.js 12.x
+        用途：actions / setup-node @ v1
+        与：
+          节点版本：12.x
+      -名称：npm install
+        运行：|
+          npm安装
+          
+      -名称：'运行【步步宝】'
+        运行：|
+          节点Task / bububao.js
+        
+        env：
+          PUSH_KEY：$ {{ secrets.PUSH_KEY }}
+          TG_BOT_TOKEN：$ {{ secrets.TG_BOT_TOKEN }}
+          TG_USER_ID：$ {{ secrets.TG_USER_ID }}
