@@ -145,12 +145,7 @@ let livecs = 0,
     liveIdcd = 0;
 RT = 30000;
 let refreshtokenArr = [];
-let refreshtokenVal = `bf27bb43e06b41ceadb9ce09e2e1c9a7
-ce601c97bae0467f9d48e9ab3509a43c
-1ddac2334731427586161144072378a1
-7e31cadded554de6901cb1b1c8b1ab99
-66e8d1c9fa4e4cb5a264822358624010
-ebaa0b3df085447a910fe4c8b1ee5b49`;
+let refreshtokenVal = ``;
 let middlerefreshTOKEN = [];
 let iboxpayvideoheaderArr = [];
 let iboxpayvideoheaderVal = ``;
