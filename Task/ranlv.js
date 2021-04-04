@@ -31,7 +31,7 @@ const $ = Env(zhiyi)
 const notify = $.isNode() ?require('./sendNotify') : '';
 let status, videoid,myid,supportvideoid,supportrank,show;
 status = (status = ($.getval("rlstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
-const rlurlArr = [access_token=f2e1d57418bb3d6a0439b494f3468a75&client=1&member_id=196160&user_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJSYW5sdiBKV1QiLCJpYXQiOjE2MTM0NzY3ODUsImV4cCI6MzIyNjk1MzU3MCwiYXVkIjoiUmFubHYiLCJzdWIiOiJSYW5sdiIsImRhdGEiOnsibWVtYmVyX2lkIjoxOTYxNjAsImF2YXRhciI6Imh0dHA6XC9cL3Jhbmx2Lmx2ZmFjbi5jb21cL3N0YXRpY1wvbW9kdWxlXC9hZG1pblwvaW1nXC9kZWZhdWx0X2hlYWQuanBnIiwibmlja25hbWUiOiJcdTc1MjhcdTYyMzc4NzI0MzkxMCIsIm1vYmlsZSI6IjE3NjA1MjUxMTc5In19.G-5sleW5Ojaswed4q3vDJLreSaHHVd7x9efOgQSOL_w&video_id=42407], rlheaderArr = [{\"Cookie\":\"view_24586=24586; acw_tc=3db8d72216134767061333037e111d59ab133624d4196741f3ad01f3ab\",\"Accept\":\"*/*\",\"Connection\":\"keep-alive\",\"Accept-Encoding\":\"gzip, deflate, br\",\"Host\":\"ranlv.lvfacn.com\",\"User-Agent\":\"ran lu shi pin/1.0.49 (iPhone; iOS 13.5.1; Scale/3.00)\",\"Content-Length\":\"0\",\"Accept-Language\":\"zh-Hans-CN;q=1\"}],rlbodyArr = []
+const rlurlArr = [], rlheaderArr = [],rlbodyArr = []
 let rlurl = $.getdata('rlurl')
 let rlheader = $.getdata('rlheader')
 //let rlbody = $.getdata('rlbody')
